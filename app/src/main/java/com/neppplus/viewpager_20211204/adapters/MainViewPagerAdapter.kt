@@ -23,22 +23,20 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
 
     }
 
-    override fun getCount(): Int {
-        return 3
+    override fun getCount() = 3
 
     }
 
     override fun getItem(position: Int): Fragment {
-        if (position == 0){
-            return NameFregment()
+
+        return when(position){
+            0-> NameFregment(        )
+            1-> AddressFragment()
+            else -> AgeFragment()
         }
-        else if (position == 1){
-            return AddressFragment()
-        }
-        else{
-            return AgeFragment()
-        }
+
 
     }
 
 }
+
