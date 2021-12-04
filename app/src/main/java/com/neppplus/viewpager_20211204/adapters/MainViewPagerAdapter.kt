@@ -25,7 +25,7 @@ class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getCount() = 3
 
-    }
+
 
     override fun getItem(position: Int): Fragment {
 
