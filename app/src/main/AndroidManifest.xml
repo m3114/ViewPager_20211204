@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewPager_20211204">
         <activity
+            android:name=".AddressFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment.AddressFragment"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_address"
+            android:exported="false" />
+        <activity
+            android:name=".fragmentAddress"
+            android:exported="false" />
+        <activity
+            android:name=".greament_name"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
